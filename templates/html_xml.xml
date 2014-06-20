@@ -219,7 +219,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="onchange" value="on_change=&quot;onchange_$1$($1$, context=context)&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="onchange" value="on_change=&quot;onchange_$1$($1$, context)&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -230,7 +230,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="on_change" value="on_change=&quot;onchange_$1$($1$, context=context)&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="on_change" value="on_change=&quot;onchange_$1$($1$, context)&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
