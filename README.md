@@ -26,5 +26,7 @@ Restart Pycharm
 
 
 Contributors
-   Julien Drecq
-   Maxime Jacquet
+```
+
+   * Julien Drecq
+   * Maxime Jacquet
