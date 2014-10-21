@@ -241,7 +241,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -869,7 +869,6 @@
   <template name="super" value="super($class$, self).$method$($END$)" description="Generates a 'super' call" toReformat="true" toShortenFQNames="true">
     <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="false" />
     <variable name="method" expression="pyFunctionName()" defaultValue="" alwaysStopAt="false" />
-    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
   <template name="docstring" value="&quot;&quot;&quot;&#10;    :param cr: database cursor&#10;    :param uid: current user id&#10;    :param ids: list of ids&#10;    :rtype: dictionary with a&#10;    &#10;    This function is used for&#10;&quot;&quot;&quot;" description="docstring" toReformat="true" toShortenFQNames="true">
@@ -968,7 +967,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -980,7 +979,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -992,7 +991,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1004,7 +1003,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1016,7 +1015,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1028,7 +1027,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1040,7 +1039,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1052,7 +1051,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1065,7 +1064,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1077,7 +1076,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1091,7 +1090,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1103,7 +1102,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1116,7 +1115,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1129,7 +1128,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1143,7 +1142,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1157,7 +1156,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1169,7 +1168,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1183,7 +1182,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1196,7 +1195,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1209,7 +1208,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -1220,7 +1219,7 @@
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="Python" value="false" />
+      <option name="Python" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
