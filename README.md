@@ -22,7 +22,7 @@ cp ./templates/Python.xml /Users/[user]/Library/Preferences/PyCharm30/templates/
 ```
 Template xml Odoo
 ```
-cp ./templates/html_xml.xml /Users/[user]/Library/Preferences/PyCharm30/templates/htm$
+cp ./templates/html_xml.xml /Users/[user]/Library/Preferences/PyCharm30/templates/html_xml.xml
 ```
 
 # Install files templates
