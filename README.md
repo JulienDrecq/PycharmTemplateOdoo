@@ -5,7 +5,7 @@ This branch is just a mirror of https://launchpad.net/pycharmtemplateopenerp
 # Install live templates
 
 Linux
-```
+
 Template python Odoo
 ```
 cp ./templates/Python.xml /home/[user]/.PyCharm30/config/templates/Python.xml
@@ -15,7 +15,7 @@ Template xml Odoo
 cp ./templates/html_xml.xml /home/[user]/.PyCharm30/config/templates/html_xml.xml
 ```
 MaxOS
-```
+
 Template python Odoo
 ```
 cp ./templates/Python.xml /Library/Preferences/PyCharm30/config/templates/Python.xml
