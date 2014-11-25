@@ -18,11 +18,11 @@ MaxOS
 
 Template python Odoo
 ```
-cp ./templates/Python.xml /Users/[user]/Library/Preferences/PyCharm30/config/templates/Python.xml
+cp ./templates/Python.xml /Users/[user]/Library/Preferences/PyCharm30/templates/Python.xml
 ```
 Template xml Odoo
 ```
-cp ./templates/html_xml.xml /Users/[user]/Library/Preferences/PyCharm30/config/templates/htm$
+cp ./templates/html_xml.xml /Users/[user]/Library/Preferences/PyCharm30/templates/htm$
 ```
 
 # Install files templates
@@ -33,7 +33,7 @@ cp ./fileTemplates/*.py /home/[user]/.PyCharm30/config/fileTemplates/*.py
 ```
 MacOS
 ```
-cp ./fileTemplates/*.py /Users/[user]/Library/Preferences/PyCharm30/config/fileTemplates/*.py
+cp ./fileTemplates/*.py /Users/[user]/Library/Preferences/PyCharm30/fileTemplates/*.py
 ```
 
 Restart Pycharm
