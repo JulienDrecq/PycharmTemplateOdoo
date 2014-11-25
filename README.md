@@ -33,7 +33,7 @@ cp ./fileTemplates/*.py /home/[user]/.PyCharm30/config/fileTemplates/*.py
 ```
 MacOS
 ```
-cp ./fileTemplates/*.py /Users/[user]/Library/Preferences/PyCharm30/fileTemplates/*.py
+cp -r ./fileTemplates/ /Users/[user]/Library/Preferences/PyCharm30/fileTemplates/
 ```
 
 Restart Pycharm
