@@ -180,7 +180,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="attrs required" value="attrs=&quot;{'required': [('$2$','$3$', $4$})]}&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="attrs required" value="attrs=&quot;{'required': [('$2$','$3$', $4$)]}&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -193,7 +193,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="attrs readonly" value="attrs=&quot;{'readonly': [('$2$','$3$', $4$})]}&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="attrs readonly" value="attrs=&quot;{'readonly': [('$2$','$3$', $4$)]}&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -206,7 +206,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="attrs invisible" value="attrs=&quot;{'invisible': [('$2$','$3$', $4$})]}&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="attrs invisible" value="attrs=&quot;{'invisible': [('$2$','$3$', $4$)]}&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
