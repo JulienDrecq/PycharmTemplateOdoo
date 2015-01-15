@@ -1,6 +1,4 @@
 Live Templates & Files Templates Python Odoo (formerly OpenERP) for Pycharm.
-This branch is just a mirror of https://launchpad.net/pycharmtemplateopenerp
-
 
 # Install live templates
 
