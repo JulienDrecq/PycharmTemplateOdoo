@@ -41,3 +41,7 @@ Contributors
 
    * Julien Drecq
    * Maxime Jacquet
+```
+
+# Todo : 
+* Odoo new api integration (decorator, function, views, etc.)
