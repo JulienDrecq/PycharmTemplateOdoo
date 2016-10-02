@@ -41,6 +41,7 @@ Contributors
 
    * Julien Drecq
    * Maxime Jacquet
+   * Jeffery Chen Fan
 ```
 
 # Todo : 
