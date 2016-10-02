@@ -41,6 +41,7 @@ Contributors
 
    * Julien Drecq
    * Maxime Jacquet
+   * mynameisshiy
    * Jeffery Chen Fan
 ```
 
