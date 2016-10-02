@@ -1,69 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Python">
   <template name="#!" value="#!/usr/bin/env python" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="imp" value="import $module$$END$" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="coding" value="# -*- coding: $coding$ -*-&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="coding" expression="" defaultValue="utf-8" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="from" value="from $module$ import $class$$END$" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="osv &lt;= 6.0" value="from osv import osv&#10;from osv import fields&#10;$code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="osv &gt;= 6.1 &lt;= 7.0" value="from openerp.osv import osv&#10;from openerp.osv import orm&#10;from openerp.osv import fields&#10;$code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="docs" value="'''&#10;File: $filename$.py&#10;Author: $author$&#10;Description: $description$&#10;'''&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -71,24 +40,14 @@
     <variable name="author" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="for" value="for $needle$ in $haystack$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -96,12 +55,7 @@
     <variable name="haystack" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="cl" value="class $ClassName$($Object$):&#10;    &quot;&quot;&quot;$Docstring$&quot;&quot;&quot;&#10;    def __init__(self, $Arg$):&#10;        $Super$&#10;        self.$Arg$ = $Arg$&#10;    $Code$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -112,12 +66,7 @@
     <variable name="Super" expression="" defaultValue="super($ClassName$, self).__init__()" alwaysStopAt="true" />
     <variable name="Code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="copyright" value="##############################################################################&#10;#&#10;#    $ModuleName$ module for OpenERP, $Description$&#10;#    Copyright (C) $200X$ $Company$ (&lt;http://$Website$&gt;) $Author$&#10;#&#10;#    This file is a part of $ModuleName$&#10;#&#10;#    $ModuleName$ is free software: you can redistribute it and/or modify&#10;#    it under the terms of the GNU General Public License as published by&#10;#    the Free Software Foundation, either version 3 of the License, or&#10;#    (at your option) any later version.&#10;#&#10;#    $1 is distributed in the hope that it will be useful,&#10;#    but WITHOUT ANY WARRANTY; without even the implied warranty of&#10;#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#10;#    GNU General Public License for more details.&#10;#&#10;#    You should have received a copy of the GNU General Public License&#10;#    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.&#10;#&#10;##############################################################################&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -128,12 +77,7 @@
     <variable name="Website" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Author" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oo OpenObject Class &lt; 7.0" value="class $ClassName$(osv.osv):&#10;    _name = '$ObjectName$'&#10;    _description = '$Description$'&#10;&#10;    _columns = {&#10;        $Fields$&#10;    }&#10;&#10;$ClassName$()&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -142,12 +86,7 @@
     <variable name="Description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oo OpenObject Class 7.0" value="class $ClassName$(orm.Model):&#10;    _name = '$ObjectName$'&#10;    _description = '$Description$'&#10;&#10;    _columns = {&#10;        $Fields$&#10;    }&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -156,12 +95,7 @@
     <variable name="Description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ooi OpenObject Class Inherit &lt; 7.0" value="class $ClassName$(osv.osv):&#10;    _inherit = '$ObjectName$'&#10;&#10;    _columns = {&#10;        $Fields$&#10;    }&#10;&#10;$ClassName$()&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -169,12 +103,7 @@
     <variable name="ObjectName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ooi OpenObject Class Inherit = 7.0" value="class $ClassName$(orm.Model):&#10;    _inherit = '$ObjectName$'&#10;&#10;    _columns = {&#10;        $Fields$&#10;    }&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -182,12 +111,7 @@
     <variable name="ObjectName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oom Wizard osv_memory" value="class $ClassName$(osv.osv_memory):&#10;    _name = '$ObjectName$'&#10;    _description = '$Description$'&#10;&#10;    _columns = {&#10;        $Fields$&#10;    }&#10;&#10;$ClassName$()&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -196,12 +120,7 @@
     <variable name="Description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oom Wizard TransientModel" value="class $ClassName$(orm.TransientModel):&#10;    _name = '$ObjectName$'&#10;    _description = '$Description$'&#10;&#10;    _columns = {&#10;        $Fields$&#10;    }&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -210,12 +129,7 @@
     <variable name="Description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="try Try/Except" value="try:&#10;    $1$&#10;except $2$, $3$:&#10;    $4$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -224,12 +138,7 @@
     <variable name="3" expression="" defaultValue="e" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="raise $3$" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oomi Open Object\Wizard Inherit" value="class $1$(osv.osv_memory):&#10;    _inherit = '$2$'&#10;    &#10;    _columns = {&#10;        $3$&#10;    }&#10;&#10;$1$()&#10;$END$&#10;" toReformat="true" toShortenFQNames="true">
@@ -237,22 +146,12 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="this (use in wizard)" value="this = self.browse(cr, uid, ids[0], context=context)" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.char" value="'$1$': fields.char('$2$', size=$3$, $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -262,12 +161,7 @@
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.integer" value="'$1$': fields.integer('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -276,12 +170,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.float" value="'$1$': fields.float('$2$', digits_compute=dp.get_precision('$3$'), $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -291,12 +180,7 @@
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.boolean" value="'$1$': fields.boolean('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -305,12 +189,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.date" value="'$1$': fields.date('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -319,12 +198,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.datetime" value="'$1$': fields.datetime('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -333,12 +207,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.selection" value="'$1$': fields.selection($2$, '$3$', $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -348,12 +217,7 @@
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.many2one" value="'$1$_id': fields.many2one('$2$', '$3$', $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -363,12 +227,7 @@
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.many2many" value="'$1$_ids': fields.many2many('$2$', '$3$_rel', '$4$_id', '$5$_id}', '$6$', $8$help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -381,12 +240,7 @@
     <variable name="8" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="7" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.one2many" value="'$1$_ids': fields.one2many('$2$', '$3$_id', '$4$', $6$help='$5$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -397,12 +251,7 @@
     <variable name="6" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.function" value="'$1$': fields.function($2$,&#10;                    method=$3$,&#10;                    string='$4$',&#10;                    type='$5$',&#10;                    store=$6$,$8$&#10;                    help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -415,12 +264,7 @@
     <variable name="8" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="7" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.related" value="'$1$': fields.related('$2$', '$3$', type='$4$', $5$, string='$6$', $8$help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -433,12 +277,7 @@
     <variable name="8" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="7" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.text" value="'$1$': fields.text('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -447,12 +286,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.binary" value="'$1$': fields.binary('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -461,12 +295,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.reference" value="'$1$': fields.reference('$2$', selection=$3$, size=128, $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
@@ -476,32 +305,17 @@
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="Help note" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="translate import OpenERP &lt;= 6.0" value="from tools.translate import _" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="translate import OpenERP &gt;= 6.1" value="from openerp.tools.translate import _" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def search" value="def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    &#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
@@ -509,12 +323,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def read" value="def read(self, cr, uid, ids, fields=None, context=None, load='_classic_read'):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
@@ -522,12 +331,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def create" value="def create(self, cr, uid, values, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    &#10;    id = $2$&#10;    $3$&#10;    $END$&#10;    return id" toReformat="true" toShortenFQNames="true">
@@ -535,12 +339,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def write" value="def write(self, cr, uid, ids, values, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;&#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
@@ -548,12 +347,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def unlink" value="def unlink(self, cr, uid, ids, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    $3$&#10;    result = $4$&#10;    $END$&#10;    return result" toReformat="true" toShortenFQNames="true">
@@ -561,12 +355,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def copy" value="def copy(self, cr, uid, id, default=None, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    $2$&#10;    return $3$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -574,12 +363,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def default_get" value="def default_get(self, cr, uid, fields_list, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    values = $2$&#10;    $3$&#10;    $END$&#10;    return values" toReformat="true" toShortenFQNames="true">
@@ -587,12 +371,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def fields_get" value="def fields_get(self, cr, uuid, fields=None, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    $2$&#10;    return $3$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -600,12 +379,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def init" value="def init(self, cr):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    cr.execute(&quot;&quot;&quot;CREATE OR REPLACE VIEW $2$ AS (&#10;            $3$)&#10;    &quot;&quot;&quot;)&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -613,35 +387,20 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def _name_get" value="def name_get(self, cr, uid, ids, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not len(ids):&#10;        return []&#10;    &#10;    reads = self.read(cr, uid, ids, [self._rec_name], context, load='_classic_write')]&#10;    res = []&#10;    $2$&#10;    for read in reads:&#10;        res.append( ( read['id'], read[self._rec_name]) )&#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func def _name_search" value="def name_search(self, cr, uid, name, args=None, operator='ilike', context=None, limit=80):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    #TODO: make a search on specific fields and get ids&#10;    if args is None:&#10;        args=[]&#10;    if context is None:&#10;        context = {}&#10;    ids = []&#10;    if name:&#10;        ids = self.search(cr, uid, [('code', 'ilike', name)] + args, limit=limit)&#10;    if not ids:&#10;        ids = self.search(cr, uid, [('name', operator, name)] + args, limit=limit)&#10;    return self.name_get(cr, uid, ids, context=context)&#10;    $END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func on_change" value="def onchange_$1$(self, cr, uid, ids, $1$, context=None):&#10;    &quot;&quot;&quot;&#10;    $2$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    result = {}&#10;    $3$&#10;    return {&#10;        'value': result&#10;    }&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -649,12 +408,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func fields.function" value="def _get_$1$(self, cr, uid, ids, field_name, args, context=None):&#10;    result = {}&#10;    for $2$ in self.browse(cr, uid, ids, context=context):&#10;        result[$2$.id] = $3$&#10;    return result&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -662,12 +416,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="func fields.function multi" value="def _get_$1$(self, cr, uid, ids, field_name, args, context=None):&#10;    result = {}&#10;    for $2$ in self.browse(cr, uid, ids, context=context):&#10;        result[$2$.id] = {&#10;            $4$: $3$,&#10;        }&#10;    return result&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -676,12 +425,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="read" value="self.read(cr, uid, $1$, ['$2$'], context=context)$3$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -689,23 +433,13 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="browse" value="self.browse(cr, uid, $1$, context=context)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="ids" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="search" value="self.search(cr, uid, [('$1$', '$2$', '$3$')], context=context)$4$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -714,90 +448,50 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="create" value="id = self.create(cr, uid, $1$, context=context)$2$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="write" value="self.write(cr, uid, $1$, $2$, context=context)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="ids" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="vals" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="unlink" value="self.unlink(cr, uid, $1$, context=context)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="copy" value="self.copy(cr, uid, $1$, $2$, context=context)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="ids" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="logger" value="import netsvc&#10;logger = netsvc.Logger()&#10;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="logging" value="import logging&#10;logger = logging.getLogger($1$)&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="__name__" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ctx" value="ctx = context.copy()" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="try Try/Except/Else" value="try:&#10;    $1$&#10;except $2$, $3$:&#10;    $4$&#10;else:&#10;    $5$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -807,12 +501,7 @@
     <variable name="4" expression="" defaultValue="raise $3$" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="pass" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="try Try/Except/Finally" value="try:&#10;    $1$&#10;except $2$, $3$:&#10;    $4$&#10;finally:&#10;    $5$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -822,12 +511,7 @@
     <variable name="4" expression="" defaultValue="raise $3$" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="pass" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="try Try/Except/Else/Finally" value="try:&#10;    $1$&#10;except $2$, $3$:&#10;    $4$&#10;finally:&#10;    $5$&#10;finally:&#10;    $6$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -838,112 +522,64 @@
     <variable name="5" expression="" defaultValue="pass" alwaysStopAt="true" />
     <variable name="6" expression="" defaultValue="pass" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ifcontext" value="if context is None:&#10;    context = {}&#10;$END$" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="pdb" value="import pdb&#10;pdb.set_trace()" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="super" value="super($class$, self).$method$($END$)" description="Generates a 'super' call" toReformat="true" toShortenFQNames="true">
     <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="false" />
     <variable name="method" expression="pyFunctionName()" defaultValue="" alwaysStopAt="false" />
-    <context />
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
   </template>
   <template name="docstring" value="&quot;&quot;&quot;&#10;    :param cr: database cursor&#10;    :param uid: current user id&#10;    :param ids: list of ids&#10;    :rtype: dictionary with a&#10;    &#10;    This function is used for&#10;&quot;&quot;&quot;" description="docstring" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="coding_utf8" value="#-*- coding: utf-8 -*-" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="encoding_utf8" value="# -*- encoding: utf-8 -*-" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ifhasattrids" value="if not hasattr(ids, '__iter__'):&#10;    ids = [ids]&#10;$END$" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="except raise osv.except_osv(title, message)" value="raise osv.except_osv(_('$1$'), _('$2$'))$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Error" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Message" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="except raise wizard.except_wizard(title, message)" value="raise wizard.except_wizard(_('$1$'), _('$2$'))$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Error" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Message" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="spg" value="self.pool.get('$1$')&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="licence header" value="# OpenERP Module&#10;# Copyright (C) 2013 $company$ $author$ &lt;$email$&gt;&#10;# The licence is in the file __openerp__.py&#10;$END$" description="licence header" toReformat="true" toShortenFQNames="true">
@@ -951,133 +587,78 @@
     <variable name="author" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="email" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ifhasattr" value="if not hasattr($1$, '__iter__'):&#10;    $2$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="pool" value="$1$_pool = self.pool.get($2$)&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.binary new_api" value="$1$ = fields.Binary($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.boolean new_api" value="$1$ = fields.Boolean($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.char new_api" value="$1$ = fields.Char($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.date new_api" value="$1$ = fields.Date($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.datetime new_api" value="$1$ = fields.Datetime($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.float new_api" value="$1$ = fields.Float($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fields.function new_api" value="$1$ = fields.$2$(compute='$3$')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.function new_api" value="$1$ = fields.$2$(compute='$3$')&#10;&#10;def $3$(self):&#10;    result = 0&#10;    for rec in self:&#10;        rec.$1$ = result&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.integer new_api" value="$1$ = fields.Integer($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.many2many new_api" value="$1$_ids = fields.Many2many(comodel_name='$2$',&#10;                           relation='$3$',&#10;                           column1='$4$',&#10;                           column2='$4$')$END$" toReformat="true" toShortenFQNames="true">
@@ -1086,24 +667,14 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.many2one new_api" value="$1$_id = fields.Many2one('$2$')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.one2many new_api" value="$1$_ids = fields.One2many('$2$', '$3$_id')$END$" toReformat="true" toShortenFQNames="true">
@@ -1111,12 +682,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.reference new_api" value="$1$ = fields.Reference([('$2$', '$3$')])$END$" toReformat="true" toShortenFQNames="true">
@@ -1124,12 +690,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.related stored new_api" value="$1$ = fields.$2$(string='$3$', store=True, related='$4$')$END$" toReformat="true" toShortenFQNames="true">
@@ -1138,12 +699,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.selection new_api" value="$1$ = fields.Selection([('$2$', '$3$')$4$])$END$" toReformat="true" toShortenFQNames="true">
@@ -1152,24 +708,14 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.text new_api" value="$1$ = fields.Text($2$)$END$" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="fields.related new_api" value="$1$ = fields.$2$(string='$3$', related='$4$')$END$" toReformat="true" toShortenFQNames="true">
@@ -1178,12 +724,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oo OpenObject Class &gt;= 8.0" value="class $ClassName$(models.Model):&#10;    _name = '$ObjectName$'&#10;&#10;    $Fields$&#10;$END$" toReformat="false" toShortenFQNames="true">
@@ -1191,12 +732,7 @@
     <variable name="ObjectName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ooi OpenObject Class Inherit &gt;= 8.0" value="class $ClassName$(models.Model):&#10;    _inherit = '$ObjectName$'&#10;&#10;    $Fields$&#10;$END$" toReformat="true" toShortenFQNames="true">
@@ -1204,24 +740,61 @@
     <variable name="ObjectName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Fields" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="models fields api" value="from openerp import models, fields, api, _&#10;from openerp.exceptions import except_orm, Warning, RedirectWarning&#10;import openerp.addons.decimal_precision as dp&#10;$1$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="func def _name_get new_api" value="@api.multi&#10;@api.depends($1$,)&#10;def name_get(self):    &#10;    res = []   &#10;    for rec in self:&#10;        name = rec.name&#10;        res.append( (rec.id, name) )&#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func def _name_search new_api" value="@api.model&#10;def name_search(self, name, args=None, operator='ilike', context=None, limit=80):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    #TODO: make a search on specific fields and get ids&#10;    if args is None:&#10;        args=[]&#10;    if context is None:&#10;        context = {}&#10;    ids = []&#10;    if name:&#10;        ids = self.search([('code', 'ilike', name)] + args, limit=limit)&#10;    if not ids:&#10;        ids = self.search([('name', operator, name)] + args, limit=limit)&#10;    return self.name_get()&#10;    $END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func def copy new_api" value="@api.multi&#10;def copy(self, default=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    self.ensure_one()&#10;    default = default or {}&#10;    &#10;    return super($2$, self).copy(default)&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func def create new_api" value="@api.model&#10;def create(self, vals):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;  &#10;    res = super($2$, self).create(vals)&#10;    &#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func def default_get new_api" value="@api.model&#10;def default_get(self, fields):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    rec = super($2$, self).default_get(fields)&#10;    &#10;    return rec&#10; $END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func def write new_api" value="@api.multi&#10;def write(self, vals):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;  &#10;    res = super($2$, self).write(vals)&#10;    &#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func onchange new_api" value="@api.onchange('$1$')&#10;def on_change_$1$(self):&#10;    if self.$1$ == 'draft':&#10;        self.$2$ == 'confirm'&#10;        self.$3$ == True&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>
-
