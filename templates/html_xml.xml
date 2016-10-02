@@ -1,97 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="html/xml">
-  <template name="t" value="&lt;$TAG$&gt;$END$&lt;/$TAG_NAME$&gt;" description="Tag pair" toReformat="true" toShortenFQNames="true">
-    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="TAG_NAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="Python" value="false" />
-    </context>
-  </template>
   <template name="T" value="&lt;$TAG$&gt;$SELECTION$&lt;/$TAGNAME$&gt;&#10;" description="Surround with &lt;tag&gt;&lt;/tag&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <variable name="TAGNAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="XSL_TEXT" value="true" />
-      <option name="Python" value="false" />
-    </context>
-  </template>
-  <template name="T2" value="&lt;$TAG$&gt;$SELECTION$&lt;/$TAGNAME$&gt;" description="Surround with &lt;tag&gt;&lt;/tag&gt; in HTML/JSP" toReformat="false" toShortenFQNames="false">
-    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
-    <variable name="TAGNAME" expression="firstWord(TAG)" defaultValue="&quot;&quot;" alwaysStopAt="false" />
-    <context>
-      <option name="HTML_TEXT" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="Python" value="false" />
+      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="CD" value="&lt;![CDATA[&#10;$SELECTION$&#10;]]&gt;" description="Surround with CDATA section" toReformat="false" toShortenFQNames="false">
     <context>
-      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
       <option name="XSL_TEXT" value="true" />
-      <option name="Python" value="false" />
+      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="&lt;?" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="oerp" value="&lt;openerp&gt;&#10;    &lt;data&gt;&#10;    $1$&#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field ... /&gt;" value="&lt;field name=&quot;$1$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field ... &gt;&lt;/field&gt;" value="&lt;field name=&quot;$1$&quot;&gt;$2$&lt;/field&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field ... colspan ... /&gt;" value="&lt;field name=&quot;$1$&quot; colspan=&quot;$2$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="4" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field ... colspan ... col ... /&gt;" value="&lt;field name=&quot;$1$&quot; colspan=&quot;$2$&quot; col=&quot;$3$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -99,47 +50,27 @@
     <variable name="2" expression="" defaultValue="4" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="4" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field ref=&quot;xxx&quot;... /&gt;" value="&lt;field name=&quot;$1$&quot; ref=&quot;$2$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field eval=&quot;xxx&quot;... /&gt;" value="&lt;field name=&quot;$1$&quot; eval=&quot;$2$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="field &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&lt;/field&gt;" value="&lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    $1$&#10;&lt;/field&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="button" value="&lt;button string=&quot;$1$&quot; icon=&quot;$2$&quot; states=&quot;$3$&quot; type=&quot;$4$&quot; name=&quot;$5$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -149,12 +80,7 @@
     <variable name="4" expression="" defaultValue="object" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="to_validate" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="domain" value="domain=&quot;[('$1$','$2$', $3$)]&quot;" toReformat="true" toShortenFQNames="true">
@@ -162,22 +88,12 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="context" value="context=&quot;{}&quot;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="attrs required" value="attrs=&quot;{'required': [('$2$','$3$', $4$)]}&quot;" toReformat="true" toShortenFQNames="true">
@@ -185,12 +101,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="attrs readonly" value="attrs=&quot;{'readonly': [('$2$','$3$', $4$)]}&quot;" toReformat="true" toShortenFQNames="true">
@@ -198,12 +109,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="attrs invisible" value="attrs=&quot;{'invisible': [('$2$','$3$', $4$)]}&quot;" toReformat="true" toShortenFQNames="true">
@@ -211,151 +117,86 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="onchange" value="on_change=&quot;onchange_$1$($1$, context)&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="on_change" value="on_change=&quot;onchange_$1$($1$, context)&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="sep" value="&lt;separator string=&quot;$1$&quot; colspan=&quot;$2$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="4" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="separator" value="&lt;separator string=&quot;$1$&quot; colspan=&quot;$2$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="group" value="&lt;group colspan=&quot;$1$&quot;&gt;&#10;    $2$&#10;&lt;/group&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="4" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="notebook" value="&lt;notebook colspan=&quot;4&quot;&gt;&#10;    &lt;page string=&quot;$1$&quot;&gt;&#10;        $2$&#10;    &lt;/page&gt;&#10;&lt;/notebook&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="page" value="&lt;page string=&quot;$1$&quot;&gt;&#10;    $2$&#10;&lt;/page&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="label &lt; 7.0" value="&lt;label string=&quot;$1$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="label &gt;= 7.0" value="&lt;label for=&quot;$2$&quot; string=&quot;$1$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="attribute" value="&lt;attribute name=&quot;$1$&quot;&gt;$2$&lt;/attribute&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="attr" value="&lt;attribute name=&quot;$1$&quot;&gt;$2$&lt;/attribute&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="newline" value="&lt;newline/&gt;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="record" value="&lt;record id=&quot;$1$&quot; model=&quot;$2$&quot;&gt;&#10;    $3$&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -363,198 +204,108 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="nolabel" value="nolabel=&quot;1&quot; $1$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="nol" value="nolabel=&quot;1&quot; $1$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="readonly" value="readonly=&quot;1&quot; $1$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="required" value="required=&quot;1&quot; $1$" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="invisible" value="invisible=&quot;1&quot; $1$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="position" value="position=&quot;$1$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="inside" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="pos" value="position=&quot;$1$&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="inside" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="mode tree,form" value="mode=&quot;tree,form&quot;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="mode tree" value="mode=&quot;tree&quot;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="confirm" value="confirm=&quot;Are you sure ?&quot;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="version" value="version=&quot;7.0&quot;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="tree" value="&lt;tree string=&quot;$1$&quot;&gt;&#10;    $2$&#10;&lt;/tree&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="form &lt; 7.0" value="&lt;form string=&quot;$1$&quot;&gt;&#10;    $2$&#10;&lt;/form&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="form &gt;= 7.0" value="&lt;form string=&quot;$1$&quot; version=&quot;7.0&quot;&gt;&#10;    $2$&#10;&lt;/form&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="kanban" value="&lt;kanban default_group_by=&quot;$1$&quot;&gt;&#10;    &lt;field name=&quot;color&quot;/&gt;&#10;    &lt;templates&gt;&#10;        &lt;t t-name=&quot;kanban-box&quot;&gt;&#10;            &lt;div t-attf-class=&quot;oe_kanban_color_#{kanban_getcolor(record.color.raw_value)}&#10;                oe_kanban_global_click_edit oe_semantic_html_override&#10;                oe_kanban_card #{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}&quot;&gt;&#10;                &lt;div class=&quot;oe_dropdown_kanban&quot;&gt;&#10;                    &lt;div class=&quot;oe_dropdown_toggle&quot;&gt;&#10;                        &lt;span class=&quot;oe_e&quot;&gt;#&lt;/span&gt;&#10;                        &lt;ul class=&quot;oe_dropdown_menu&quot;&gt;&#10;                            &lt;li&gt;&lt;a type=&quot;delete&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;&#10;                            &lt;li&gt;&lt;ul class=&quot;oe_kanban_colorpicker&quot; data-field=&quot;color&quot;/&gt;&lt;/li&gt;&#10;                        &lt;/ul&gt;&#10;                    &lt;/div&gt;&#10;                    &lt;div class=&quot;oe_clear&quot;&gt;&lt;/div&gt;&#10;                &lt;/div&gt;&#10;                &lt;div t-attf-class=&quot;oe_kanban_content&quot;&gt;&#10;                    name: &lt;field name=&quot;name&quot;/&gt;&lt;br /&gt;&#10;                          &lt;!-- Other field here --&gt;&#10;                &lt;/div&gt;&#10;            &lt;/div&gt;&#10;        &lt;/t&gt;&#10;    &lt;/templates&gt;&#10;&lt;/kanban&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="header" value="&lt;header&gt;&#10;    $1$&#10;&lt;/header&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="sheet" value="&lt;sheet&gt;&#10;    $1$&#10;&lt;/sheet&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="menuitem Action &lt; 7.0" value="&lt;menuitem id=&quot;menu_$1$&quot; &#10;    parent=&quot;menu_$2$&quot;&#10;    sequence=&quot;$3$&quot;&#10;    action=&quot;action_$4$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -563,12 +314,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="menuitem Action &gt;= 7.0" value="&lt;menuitem id=&quot;$1$_menu&quot; &#10;    parent=&quot;$2$_menu&quot;&#10;    sequence=&quot;$3$&quot;&#10;    name=&quot;$5$&quot;&#10;    action=&quot;$4$_action&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -578,12 +324,7 @@
     <variable name="5" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="menuitem Name &lt; 7.0" value="&lt;menuitem id=&quot;menu_$1$&quot; &#10;    parent=&quot;menu_$2$&quot;&#10;    sequence=&quot;$3$&quot;&#10;    name=&quot;$4$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -592,12 +333,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="Label" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="menuitem Server Action" value="&lt;record id=&quot;action_$1$&quot; model=&quot;ir.actions.server&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;model_id&quot; ref=&quot;model_$3$&quot;/&gt;&#10;    &lt;field name=&quot;state&quot;&gt;code&lt;/field&gt;&#10;    &lt;field name=&quot;code&quot;&gt;action = obj.$4$()&lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;menuitem name=&quot;$2$&quot;&#10;    action=&quot;action_$1$&quot;&#10;    id=&quot;menu_$1$&quot; &#10;    parent=&quot;base.menu_config&quot;&#10;    type=&quot;server&quot; icon=&quot;STOCK_EXECUTE&quot; sequence=&quot;100&quot; /&gt;" toReformat="true" toShortenFQNames="true">
@@ -606,12 +342,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="my_fonction" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="wizard &lt;wizard/&gt;" value="&lt;wizard id=&quot;wizard_$1$&quot;&#10;    string=&quot;$2$&quot;&#10;    model=&quot;$3$&quot;&#10;    name=&quot;$4$&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -620,12 +351,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="wizard osv_memory menu &lt; 7.0" value="&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;        &lt;separator string=&quot;&quot; colspan=&quot;4&quot; /&gt;&#10;        &lt;group colspan=&quot;4&quot; col=&quot;6&quot;&gt;&#10;            &lt;label string =&quot;&quot; colspan=&quot;2&quot;/&gt;&#10;            &lt;button icon=&quot;gtk-cancel&quot; special=&quot;cancel&quot; string=&quot;Cancel&quot;/&gt;&#10;            &lt;button icon=&quot;terp-gtk-go-back-rtl&quot; string=&quot;Start&quot; name=&quot;$5$&quot; type=&quot;object&quot;/&gt;&#10;        &lt;/group&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_$1$_view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$3$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;[]&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{}&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;menuitem id=&quot;menu_$1$_wizard&quot;&#10;    parent=&quot;menu_$6$&quot;&#10;    sequence=&quot;$7$&quot;&#10;    action=&quot;action_$1$_view&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -637,12 +363,7 @@
     <variable name="6" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="7" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="wizard osv_memory menu &gt;= 7.0" value="&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot; col=&quot;4&quot; version=&quot;7.0&quot;&gt;&#10;        &lt;group colspan=&quot;2&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;        &lt;/group&gt;&#10;        &lt;footer&gt;&#10;            &lt;button type=&quot;special&quot; special=&quot;cancel&quot; string=&quot;Cancel&quot; icon=&quot;gtk-cancel&quot;/&gt;&#10;            &lt;button type=&quot;object&quot; string=&quot;Next&quot; name=&quot;action_$5$&quot; icon=&quot;gtk-ok&quot;&#10;                confirm=&quot;Are you sure you want to continue?&quot;/&gt;&#10;        &lt;/footer&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;$1$_wizard_action&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$3$&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{}&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;menuitem id=&quot;$1$_wizard_menu&quot;&#10;    parent=&quot;$6$_menu&quot;&#10;    sequence=&quot;$7$&quot;&#10;    action=&quot;$1$_wizard_action&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -654,12 +375,7 @@
     <variable name="3" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="wizard osv_memory toolbar" value="&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_$1$_view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$3$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;[]&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{}&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.values&quot; id=&quot;wizard_$1$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$3$&lt;/field&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_multi&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$5$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,' + str(ref('action_$1$_view'))&quot; /&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -669,12 +385,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view form" value="&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -683,12 +394,7 @@
     <variable name="3" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view tree" value="&lt;record id=&quot;view_$1$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;tree string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -697,12 +403,7 @@
     <variable name="3" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view search" value="&lt;record id=&quot;view_$1$_search&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.search&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;search&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;search string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot; select=&quot;True&quot;/&gt;&#10;    &lt;/search&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -711,12 +412,7 @@
     <variable name="3" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view both (tree, form)" value="&lt;record id=&quot;view_$1$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;tree string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -725,12 +421,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view both (tree, form, search)" value="&lt;record id=&quot;view_$1$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;tree string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;view_$1$_search&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.search&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;search&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;search string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot; select=&quot;True&quot;/&gt;&#10;    &lt;/search&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -739,12 +430,7 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view both (tree, form) + Action + Menu" value="&lt;record id=&quot;view_$1$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;tree string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;act_open_$1$_view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$3$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;[]&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{}&lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window.view&quot; id=&quot;act_open_$1$_view_form&quot;&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;act_open_$1$_view&quot;/&gt;&#10;    &lt;field name=&quot;sequence&quot; eval=&quot;20&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$1$_form&quot;/&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window.view&quot; id=&quot;act_open_$1$_view_tree&quot;&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;act_open_$1$_view&quot;/&gt;&#10;    &lt;field name=&quot;sequence&quot; eval=&quot;10&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$1$_tree&quot;/&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;menuitem id=&quot;menu_$1$&quot;&#10;    parent=&quot;$5$&quot;&#10;    sequence=&quot;20&quot;&#10;    action=&quot;act_open_$1$_view&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -754,12 +440,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view both (tree, form, search) + Action + Menu" value="&lt;record id=&quot;view_$1$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;tree string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;form string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot;/&gt;&#10;    &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record id=&quot;view_$1$_search&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.search&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;search&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;search string=&quot;$3$&quot;&gt;&#10;        &lt;field name=&quot;$4$&quot; select=&quot;True&quot;/&gt;&#10;    &lt;/search&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;act_open_$1$_view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$3$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;search_view_id&quot; ref=&quot;view_$1$_search&quot;/&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;[]&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{}&lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window.view&quot; id=&quot;act_open_$1$_view_form&quot;&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;act_open_$1$_view&quot;/&gt;&#10;    &lt;field name=&quot;sequence&quot; eval=&quot;20&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$1$_form&quot;/&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record model=&quot;ir.actions.act_window.view&quot; id=&quot;act_open_$1$_view_tree&quot;&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;act_open_$1$_view&quot;/&gt;&#10;    &lt;field name=&quot;sequence&quot; eval=&quot;10&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$1$_tree&quot;/&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;menuitem id=&quot;menu_$1$&quot;&#10;    parent=&quot;$5$&quot;&#10;    sequence=&quot;20&quot;&#10;    action=&quot;act_open_$1$_view&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -769,12 +450,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="view form (inherit)" value="&lt;record id=&quot;view_$1$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$2$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$2$&lt;/field&gt;&#10;    &lt;field name=&quot;inherit_id&quot; ref=&quot;$3$&quot;/&gt;&#10;    &lt;field name=&quot;priority&quot; eval=&quot;8&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;xpath expr=&quot;//notebook&quot; position=&quot;inside&quot;&gt;&#10;        &lt;page string=&quot;$4$&quot;&gt;&#10;            &lt;field name=&quot;$5$&quot;/&gt;&#10;        &lt;/page&gt;&#10;    &lt;/xpath&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" toReformat="true" toShortenFQNames="true">
@@ -784,12 +460,7 @@
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="5" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="act_window" value="&lt;act_window id=&quot;act_$1$&quot;&#10;    name=&quot;$2$&quot;&#10;    res_model=&quot;$3$&quot;&#10;    src_model=&quot;$4$&quot;&#10;    domain=&quot;[('$5$', '$6$', $7$)]&quot;/&gt;" toReformat="true" toShortenFQNames="true">
@@ -801,12 +472,7 @@
     <variable name="6" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="7" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="xpath after" value="&lt;xpath expr=&quot;//field[@$1$='$2$']&quot; position=&quot;after&quot;&gt;&#10;    &lt;field name=&quot;$3$&quot;/&gt;&#10;&lt;/xpath&gt;" toReformat="true" toShortenFQNames="true">
@@ -814,12 +480,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="xpath before" value="&lt;xpath expr=&quot;//field[@$1$='$2$']&quot; position=&quot;before&quot;&gt;&#10;    &lt;field name=&quot;$3$&quot;/&gt;&#10;&lt;/xpath&gt;" toReformat="true" toShortenFQNames="true">
@@ -827,12 +488,7 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="replace" value="&lt;xpath expr=&quot;//field[@$1$='$2$']&quot; position=&quot;replace&quot;&gt;&#10;    &lt;field name=&quot;$3$&quot;/&gt;&#10;&lt;/xpath&gt;" toReformat="true" toShortenFQNames="true">
@@ -840,24 +496,14 @@
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="xpath inside" value="&lt;xpath expr=&quot;//notebook&quot; position=&quot;inside&quot;&gt;&#10;    &lt;page string=&quot;$1$&quot;&gt;&#10;        &lt;field name=&quot;$2$&quot;/&gt;&#10;    &lt;/page&gt;&#10;&lt;/xpath&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="xpath attribute" value="&lt;xpath expr=&quot;//field[@$1$='$2$']&quot; position=&quot;attributes&quot;&gt;&#10;    &lt;attribute name=&quot;$3$&quot;&gt;$4$&lt;/attribute&gt;&#10;&lt;/xpath&gt;" toReformat="true" toShortenFQNames="true">
@@ -866,13 +512,14 @@
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xpath replace" value="&lt;xpath expr=&quot;//field[@$1$='$2$']&quot; position=&quot;replace&quot;&gt;&#10;    &#10;&lt;/xpath&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
     </context>
   </template>
 </templateSet>
-
