@@ -43,7 +43,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -632,7 +632,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.datetime new_api" value="$1$ = fields.Datetime($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.datetime new_api" value="$1$ = fields.Datetime($2$)$END$" shortcut="SPACE" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -646,10 +646,11 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.function new_api" value="$1$ = fields.$2$(compute='$3$')&#10;&#10;def $3$(self):&#10;    result = 0&#10;    for rec in self:&#10;        rec.$1$ = result&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.function new_api" value="$1$ = fields.$2$(compute='$3$')&#10;&#10;@api.multi&#10;@api.depends($4$)&#10;def $3$(self):&#10;    for rec in self:&#10;        rec.$1$ = new_value&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -797,5 +798,31 @@
     <context>
       <option name="Python" value="true" />
     </context>
+  </template>
+  <template name="func read  new_api" value="@api.multi&#10;def read(self, fields=None, load='_classic_read')&#10;    self.check_access_rule('read')&#10;    return super($class$, self).(fields=fields, load=load)&#10;    &#10;$END$   &#10;" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func unlink new_api" value="@api.multi&#10;def unlink(self):&#10;    self.check_access_rule('unlink')&#10;    &#10;    return super($class$, self).unlink()&#10;    &#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func _needaction_domain_get" value="@api.model&#10;def _needaction_domain_get(self):&#10;    &quot;&quot;&quot; Returns the domain to filter records that require an action&#10;        :return: domain or False is no action&#10;    &quot;&quot;&quot;&#10;    return False&#10;    &#10; $END$" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="func _compute" value="@api.depends('$1$')&#10;def _compute_$2$(self):&#10;    for rec in self:&#10;        rec.$2$ =  new_value&#10;        &#10;$END$" toReformat="false" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="model" value="model = env['$1$'] $END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
   </template>
 </templateSet>
