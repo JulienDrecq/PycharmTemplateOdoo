@@ -43,7 +43,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -318,7 +318,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def search" value="def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    &#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
+  <template name="func search" value="def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    &#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -326,7 +326,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def read" value="def read(self, cr, uid, ids, fields=None, context=None, load='_classic_read'):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
+  <template name="func read" value="def read(self, cr, uid, ids, fields=None, context=None, load='_classic_read'):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -334,7 +334,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def create" value="def create(self, cr, uid, values, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    &#10;    id = $2$&#10;    $3$&#10;    $END$&#10;    return id" toReformat="true" toShortenFQNames="true">
+  <template name="func create" value="def create(self, cr, uid, values, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    &#10;    id = $2$&#10;    $3$&#10;    $END$&#10;    return id" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -342,7 +342,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def write" value="def write(self, cr, uid, ids, values, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;&#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
+  <template name="func write" value="def write(self, cr, uid, ids, values, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;&#10;    res = $2$&#10;    $3$&#10;    $END$&#10;    return res" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -350,7 +350,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def unlink" value="def unlink(self, cr, uid, ids, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    $3$&#10;    result = $4$&#10;    $END$&#10;    return result" toReformat="true" toShortenFQNames="true">
+  <template name="func unlink" value="def unlink(self, cr, uid, ids, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    $3$&#10;    result = $4$&#10;    $END$&#10;    return result" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -358,7 +358,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def copy" value="def copy(self, cr, uid, id, default=None, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    $2$&#10;    return $3$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="func copy" value="def copy(self, cr, uid, id, default=None, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    $2$&#10;    return $3$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -366,7 +366,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def default_get" value="def default_get(self, cr, uid, fields_list, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    values = $2$&#10;    $3$&#10;    $END$&#10;    return values" toReformat="true" toShortenFQNames="true">
+  <template name="func default_get" value="def default_get(self, cr, uid, fields_list, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    values = $2$&#10;    $3$&#10;    $END$&#10;    return values" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -374,7 +374,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def fields_get" value="def fields_get(self, cr, uuid, fields=None, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    $2$&#10;    return $3$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="func fields_get" value="def fields_get(self, cr, uuid, fields=None, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not hasattr(ids, '__iter__'):&#10;        ids = [ids]&#10;    $2$&#10;    return $3$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -382,7 +382,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def init" value="def init(self, cr):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    cr.execute(&quot;&quot;&quot;CREATE OR REPLACE VIEW $2$ AS (&#10;            $3$)&#10;    &quot;&quot;&quot;)&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="func init" value="def init(self, cr):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    cr.execute(&quot;&quot;&quot;CREATE OR REPLACE VIEW $2$ AS (&#10;            $3$)&#10;    &quot;&quot;&quot;)&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -390,14 +390,14 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def _name_get" value="def name_get(self, cr, uid, ids, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not len(ids):&#10;        return []&#10;    &#10;    reads = self.read(cr, uid, ids, [self._rec_name], context, load='_classic_write')]&#10;    res = []&#10;    $2$&#10;    for read in reads:&#10;        res.append( ( read['id'], read[self._rec_name]) )&#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="func _name_get" value="def name_get(self, cr, uid, ids, context=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    if context is None:&#10;        context = {}&#10;    if not len(ids):&#10;        return []&#10;    &#10;    reads = self.read(cr, uid, ids, [self._rec_name], context, load='_classic_write')]&#10;    res = []&#10;    $2$&#10;    for read in reads:&#10;        res.append( ( read['id'], read[self._rec_name]) )&#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def _name_search" value="def name_search(self, cr, uid, name, args=None, operator='ilike', context=None, limit=80):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    #TODO: make a search on specific fields and get ids&#10;    if args is None:&#10;        args=[]&#10;    if context is None:&#10;        context = {}&#10;    ids = []&#10;    if name:&#10;        ids = self.search(cr, uid, [('code', 'ilike', name)] + args, limit=limit)&#10;    if not ids:&#10;        ids = self.search(cr, uid, [('name', operator, name)] + args, limit=limit)&#10;    return self.name_get(cr, uid, ids, context=context)&#10;    $END$" toReformat="true" toShortenFQNames="true">
+  <template name="func _name_search" value="def name_search(self, cr, uid, name, args=None, operator='ilike', context=None, limit=80):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    #TODO: make a search on specific fields and get ids&#10;    if args is None:&#10;        args=[]&#10;    if context is None:&#10;        context = {}&#10;    ids = []&#10;    if name:&#10;        ids = self.search(cr, uid, [('code', 'ilike', name)] + args, limit=limit)&#10;    if not ids:&#10;        ids = self.search(cr, uid, [('name', operator, name)] + args, limit=limit)&#10;    return self.name_get(cr, uid, ids, context=context)&#10;    $END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -749,50 +749,51 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def _name_get new_api" value="@api.multi&#10;@api.depends($1$,)&#10;def name_get(self):    &#10;    res = []   &#10;    for rec in self:&#10;        name = rec.name&#10;        res.append( (rec.id, name) )&#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="func _name_get new_api" value="@api.multi&#10;@api.depends($1$,)&#10;def name_get(self):    &#10;    res = []   &#10;    for rec in self:&#10;        name = rec.name&#10;        res.append( (rec.id, name) )&#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def _name_search new_api" value="@api.model&#10;def name_search(self, name, args=None, operator='ilike', context=None, limit=80):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    #TODO: make a search on specific fields and get ids&#10;    if args is None:&#10;        args=[]&#10;    if context is None:&#10;        context = {}&#10;    ids = []&#10;    if name:&#10;        ids = self.search([('code', 'ilike', name)] + args, limit=limit)&#10;    if not ids:&#10;        ids = self.search([('name', operator, name)] + args, limit=limit)&#10;    return self.name_get()&#10;    $END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="func _name_search new_api" value="@api.model&#10;def name_search(self, name, args=None, operator='ilike', context=None, limit=80):&#10;    #TODO: make a search on specific fields and get ids&#10;    if args is None:&#10;        args=[]&#10;    if context is None:&#10;        context = {}&#10;    ids = []&#10;    if name:&#10;        ids = self.search([('code', 'ilike', name)] + args, limit=limit)&#10;    if not ids:&#10;        ids = self.search([('name', operator, name)] + args, limit=limit)&#10;    return self.name_get()&#10;    $END$" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def copy new_api" value="@api.multi&#10;def copy(self, default=None):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    self.ensure_one()&#10;    default = default or {}&#10;    &#10;    return super($2$, self).copy(default)&#10;$END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+  <template name="func copy new_api" value="@api.multi&#10;def copy(self, default=None):&#10;    &quot;&quot;&quot;&#10;    self.ensure_one()&#10;    default = default or {}&#10;    &#10;    return super($class$, self).copy(default)&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def create new_api" value="@api.model&#10;def create(self, vals):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;  &#10;    res = super($2$, self).create(vals)&#10;    &#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+  <template name="func create new_api" value="@api.model&#10;def create(self, vals):&#10;    res = super($class$, self).create(vals)&#10;    &#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def default_get new_api" value="@api.model&#10;def default_get(self, fields):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;&#10;    rec = super($2$, self).default_get(fields)&#10;    &#10;    return rec&#10; $END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+  <template name="func default_get new_api" value="@api.model&#10;def default_get(self, fields):&#10;    rec = super($class$, self).default_get(fields)&#10;    &#10;    return rec&#10; $END$" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func def write new_api" value="@api.multi&#10;def write(self, vals):&#10;    &quot;&quot;&quot;&#10;    $1$&#10;    &quot;&quot;&quot;  &#10;    res = super($2$, self).write(vals)&#10;    &#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+  <template name="func write new_api" value="@api.multi&#10;def write(self, vals):&#10;    res = super($class$, self).write(vals)&#10;    &#10;    return res&#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func onchange new_api" value="@api.onchange('$1$')&#10;def on_change_$1$(self):&#10;    if self.$1$ == 'draft':&#10;        self.$2$ == 'confirm'&#10;        self.$3$ == True&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="func on_change new_api" value="@api.onchange('$1$')&#10;def on_change_$1$(self):&#10;    if self.$1$ == 'draft':&#10;        self.$2$ == 'confirm'&#10;        self.$3$ == True&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func search new_api" value="@api.model&#10;def search(self, args, offset=0, limit=None, order=None, count=False):&#10;    context = self._context or {}&#10;&#10;    if context.get('type'):&#10;        if context.get('type') in ('out_invoice', 'out_refund'):&#10;            args += [('type_tax_use', '=', 'sale')]&#10;        elif context.get('type') in ('in_invoice', 'in_refund'):&#10;            args += [('type_tax_use', '=', 'purchase')]&#10;&#10;    if context.get('journal_id'):&#10;        journal = self.env['account.journal'].browse(context.get('journal_id'))&#10;        if journal.type in ('sale', 'purchase'):&#10;            args += [('type_tax_use', '=', journal.type)]&#10;&#10;    return super($class$, self).search(args, offset, limit, order, count=count)&#10;    &#10; $END$" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
