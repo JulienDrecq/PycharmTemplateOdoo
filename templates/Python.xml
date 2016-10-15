@@ -43,7 +43,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="while" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -483,7 +483,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="logging" value="import logging&#10;logger = logging.getLogger($1$)&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="logging" value="import logging&#10;_logger = logging.getLogger($1$)&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="__name__" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -648,7 +648,7 @@
   </template>
   <template name="fields.function new_api" value="$1$ = fields.$FieldType$(compute='$3$')&#10;&#10;@api.multi&#10;@api.depends($4$)&#10;def $3$(self):&#10;    for rec in self:&#10;        rec.$1$ = new_value&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="FieldType" expression="enum('Char','Integer','Boolean',)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FieldType" expression="enum('Char','Integer','Boolean','Many2one','One2many','Many2many','Float','Date','Datetime')" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -695,9 +695,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.related stored new_api" value="$1$ = fields.$2$(string='$3$', store=True, related='$4$')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.related stored new_api" value="$1$ = fields.$FieldType$(string='$3$', store=True, related='$4$')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FieldType" expression="enum('Char','Integer','Boolean','Many2one','One2many','Many2many','Float','Date','Datetime')" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -720,9 +720,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.related new_api" value="$1$ = fields.$2$(string='$3$', related='$4$')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.related new_api" value="$1$ = fields.$FieldType$(string='$3$', related='$4$')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FieldType" expression="enum('Char','Integer','Boolean','Many2one','One2many','Many2many','Float','Date','Datetime')" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -745,7 +745,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="models import" value="from openerp import models, fields, api, _&#10;from openerp.exceptions import except_orm, Warning, RedirectWarning&#10;import openerp.addons.decimal_precision as dp&#10;$1$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="models import &lt; 10.0" value="from openerp import models, fields, api, _&#10;from openerp.exceptions import except_orm, Warning, RedirectWarning&#10;import openerp.addons.decimal_precision as dp&#10;$1$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -822,8 +822,14 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="model" value="model = env['$1$'] $END$" description="new api" toReformat="true" toShortenFQNames="true">
+  <template name="model" value="model = self.env['$1$'] $END$" description="new api" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
+  </template>
+  <template name="models import &gt;= 10.0" value="from odoo import models, fields, api, _&#10;from odoo.exceptions import except_orm, Warning, RedirectWarning&#10;import odoo.addons.decimal_precision as dp&#10;$1$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
   </template>
 </templateSet>
