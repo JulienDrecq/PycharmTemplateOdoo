@@ -154,7 +154,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.char" value="'$1$': fields.char('$2$', size=$3$, $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.char old_api" value="'$1$': fields.char('$2$', size=$3$, $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="64" alwaysStopAt="true" />
@@ -164,7 +164,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.integer" value="'$1$': fields.integer('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.integer old_api" value="'$1$': fields.integer('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -173,7 +173,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.float" value="'$1$': fields.float('$2$', digits_compute=dp.get_precision('$3$'), $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.float old_api" value="'$1$': fields.float('$2$', digits_compute=dp.get_precision('$3$'), $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -183,7 +183,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.boolean" value="'$1$': fields.boolean('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.boolean old_api" value="'$1$': fields.boolean('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -192,7 +192,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.date" value="'$1$': fields.date('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.date old_api" value="'$1$': fields.date('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -201,7 +201,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.datetime" value="'$1$': fields.datetime('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.datetime old_api" value="'$1$': fields.datetime('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -210,7 +210,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.selection" value="'$1$': fields.selection($2$, '$3$', $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.selection old_api" value="'$1$': fields.selection($2$, '$3$', $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="[('', '', '')]" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Label" alwaysStopAt="true" />
@@ -220,7 +220,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.many2one" value="'$1$_id': fields.many2one('$2$', '$3$', $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.many2one old_api" value="'$1$_id': fields.many2one('$2$', '$3$', $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="Label" alwaysStopAt="true" />
@@ -230,7 +230,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.many2many" value="'$1$_ids': fields.many2many('$2$', '$3$_rel', '$4$_id', '$5$_id}', '$6$', $8$help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.many2many old_api" value="'$1$_ids': fields.many2many('$2$', '$3$_rel', '$4$_id', '$5$_id}', '$6$', $8$help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -243,7 +243,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.one2many" value="'$1$_ids': fields.one2many('$2$', '$3$_id', '$4$', $6$help='$5$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.one2many old_api" value="'$1$_ids': fields.one2many('$2$', '$3$_id', '$4$', $6$help='$5$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -254,7 +254,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.function" value="'$1$': fields.function($2$,&#10;                    method=$3$,&#10;                    string='$4$',&#10;                    type='$5$',&#10;                    store=$6$,$8$&#10;                    help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.function old_api" value="'$1$': fields.function($2$,&#10;                    method=$3$,&#10;                    string='$4$',&#10;                    type='$5$',&#10;                    store=$6$,$8$&#10;                    help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="True" alwaysStopAt="true" />
@@ -267,7 +267,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.related" value="'$1$': fields.related('$2$', '$3$', type='$4$', $5$, string='$6$', $8$help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.related old_api" value="'$1$': fields.related('$2$', '$3$', type='$4$', $5$, string='$6$', $8$help='$7$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -280,7 +280,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.text" value="'$1$': fields.text('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.text old_api" value="'$1$': fields.text('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -289,7 +289,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.binary" value="'$1$': fields.binary('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.binary old_api" value="'$1$': fields.binary('$2$', $4$help='$3$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
@@ -298,7 +298,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.reference" value="'$1$': fields.reference('$2$', selection=$3$, size=128, $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.reference old_api" value="'$1$': fields.reference('$2$', selection=$3$, size=128, $5$help='$4$'),$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="Label" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="[('', '', '')]" alwaysStopAt="true" />
