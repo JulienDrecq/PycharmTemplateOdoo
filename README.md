@@ -2,6 +2,17 @@ Live Templates & Files Templates Python Odoo (formerly OpenERP) for Pycharm.
 
 # Install live templates
 
+Windows
+
+Template python Odoo
+```
+cp .\templates\Python.xml C:\Users\[user]\.PyCharm2016.2\config\templates\Python.xml
+```
+Template xml Odoo
+```
+cp .\templates\html_xml.xml C:\Users\[user]\.PyCharm2016.2\config\templates\html_xml.xml
+```
+
 Linux
 
 Template python Odoo
@@ -24,6 +35,11 @@ cp ./templates/html_xml.xml /Users/[user]/Library/Preferences/PyCharm30/template
 ```
 
 # Install files templates
+
+Windows
+```
+cp .\fileTemplates\*.py  C:\Users\[user]\.PyCharm2016.2\config\fileTemplates\*.py
+```
 
 Linux
 ```
