@@ -23,13 +23,13 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="osv &lt;= 6.0" value="from osv import osv&#10;from osv import fields&#10;$code$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="osv import &lt;= 6.0" value="from osv import osv&#10;from osv import fields&#10;$code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="osv &gt;= 6.1 &lt;= 7.0" value="from openerp.osv import osv&#10;from openerp.osv import orm&#10;from openerp.osv import fields&#10;$code$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="osv import &gt;= 6.1 &lt;= 7.0" value="from openerp.osv import osv&#10;from openerp.osv import orm&#10;from openerp.osv import fields&#10;$code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -43,7 +43,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="wh" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="while" value="while $condition$:&#10;    $code$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -483,7 +483,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="logging" value="import logging&#10;logger = logging.getLogger($1$)&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="logging" value="import logging&#10;_logger = logging.getLogger($1$)&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="__name__" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -530,7 +530,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="pdb" value="import pdb&#10;pdb.set_trace()" toReformat="true" toShortenFQNames="true">
+  <template name="pdb" value="import pdb&#10;pdb.set_trace()" description="debug" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -597,71 +597,72 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="pool" value="$1$_pool = self.pool.get($2$)&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="pool" value="$1$_pool = self.pool.get($2$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.binary new_api" value="$1$ = fields.Binary($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Binary" value="$1$ = fields.Binary($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.boolean new_api" value="$1$ = fields.Boolean($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Boolean" value="$1$ = fields.Boolean($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.char new_api" value="$1$ = fields.Char($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Char" value="$1$ = fields.Char($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.date new_api" value="$1$ = fields.Date($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Date" value="$1$ = fields.Date($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.datetime new_api" value="$1$ = fields.Datetime($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Datetime" value="$1$ = fields.Datetime($2$)$END$" shortcut="SPACE" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.float new_api" value="$1$ = fields.Float($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Float" value="$1$ = fields.Float($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.function new_api" value="$1$ = fields.$2$(compute='$3$')&#10;&#10;def $3$(self):&#10;    result = 0&#10;    for rec in self:&#10;        rec.$1$ = result&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.function new_api" value="$1$ = fields.$FieldType$(compute='$3$')&#10;&#10;@api.multi&#10;@api.depends($4$)&#10;def $3$(self):&#10;    for rec in self:&#10;        rec.$1$ = new_value&#10;        &#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FieldType" expression="enum('Char','Integer','Boolean','Many2one','One2many','Many2many','Float','Date','Datetime')" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.integer new_api" value="$1$ = fields.Integer($2$)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Integer" value="$1$ = fields.Integer($2$)$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.many2many new_api" value="$1$_ids = fields.Many2many(comodel_name='$2$',&#10;                           relation='$3$',&#10;                           column1='$4$',&#10;                           column2='$4$')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Many2many" value="$1$_ids = fields.Many2many(comodel_name='$2$',&#10;                           relation='$3$',&#10;                           column1='$4$',&#10;                           column2='$4$')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -670,14 +671,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.many2one new_api" value="$1$_id = fields.Many2one('$2$')$END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="fields.one2many new_api" value="$1$_ids = fields.One2many('$2$', '$3$_id')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Many2one" value="$1$_id = fields.Many2one('$2$', &#10;                         string='$3$')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -685,7 +679,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.reference new_api" value="$1$ = fields.Reference([('$2$', '$3$')])$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.One2many" value="$1$_ids = fields.One2many('$2$', '$3$_id')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -693,7 +687,24 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.related stored new_api" value="$1$ = fields.$2$(string='$3$', store=True, related='$4$')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.Reference" value="$1$ = fields.Reference([('$2$', '$3$')])$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="fields.related stored new_api" value="$1$ = fields.$FieldType$(string='$3$', store=True, related='$4$')$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FieldType" expression="enum('Char','Integer','Boolean','Many2one','One2many','Many2many','Float','Date','Datetime')" defaultValue="" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="fields.Selection" value="$1$ = fields.Selection([('$2$', '$3$')$4$])$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -702,25 +713,16 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.selection new_api" value="$1$ = fields.Selection([('$2$', '$3$')$4$])$END$" toReformat="true" toShortenFQNames="true">
-    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="fields.text new_api" value="$1$ = fields.Text($2$)$END$" toReformat="false" toShortenFQNames="true">
+  <template name="fields.Text" value="$1$ = fields.Text($2$)$END$" toReformat="false" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fields.related new_api" value="$1$ = fields.$2$(string='$3$', related='$4$')$END$" toReformat="true" toShortenFQNames="true">
+  <template name="fields.related new_api" value="$1$ = fields.$FieldType$(string='$3$', related='$4$')$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FieldType" expression="enum('Char','Integer','Boolean','Many2one','One2many','Many2many','Float','Date','Datetime')" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -743,7 +745,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="models fields api" value="from openerp import models, fields, api, _&#10;from openerp.exceptions import except_orm, Warning, RedirectWarning&#10;import openerp.addons.decimal_precision as dp&#10;$1$&#10;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="models import &lt; 10.0" value="from openerp import models, fields, api, _&#10;from openerp.exceptions import except_orm, Warning, RedirectWarning&#10;import openerp.addons.decimal_precision as dp&#10;$1$&#10;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -794,6 +796,38 @@
   </template>
   <template name="func search new_api" value="@api.model&#10;def search(self, args, offset=0, limit=None, order=None, count=False):&#10;    context = self._context or {}&#10;&#10;    if context.get('type'):&#10;        if context.get('type') in ('out_invoice', 'out_refund'):&#10;            args += [('type_tax_use', '=', 'sale')]&#10;        elif context.get('type') in ('in_invoice', 'in_refund'):&#10;            args += [('type_tax_use', '=', 'purchase')]&#10;&#10;    if context.get('journal_id'):&#10;        journal = self.env['account.journal'].browse(context.get('journal_id'))&#10;        if journal.type in ('sale', 'purchase'):&#10;            args += [('type_tax_use', '=', journal.type)]&#10;&#10;    return super($class$, self).search(args, offset, limit, order, count=count)&#10;    &#10; $END$" toReformat="false" toShortenFQNames="true">
     <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func read  new_api" value="@api.multi&#10;def read(self, fields=None, load='_classic_read')&#10;    self.check_access_rule('read')&#10;    return super($class$, self).(fields=fields, load=load)&#10;    &#10;$END$   &#10;" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func unlink new_api" value="@api.multi&#10;def unlink(self):&#10;    self.check_access_rule('unlink')&#10;    &#10;    return super($class$, self).unlink()&#10;    &#10;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="func _needaction_domain_get" value="@api.model&#10;def _needaction_domain_get(self):&#10;    &quot;&quot;&quot; Returns the domain to filter records that require an action&#10;        :return: domain or False is no action&#10;    &quot;&quot;&quot;&#10;    return False&#10;    &#10; $END$" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="func _compute" value="@api.depends('$1$')&#10;def _compute_$2$(self):&#10;    for rec in self:&#10;        rec.$2$ =  new_value&#10;        &#10;$END$" toReformat="false" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="model" value="model = self.env['$1$'] $END$" description="new api" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="models import &gt;= 10.0" value="from odoo import models, fields, api, _&#10;from odoo.exceptions import except_orm, Warning, RedirectWarning&#10;import odoo.addons.decimal_precision as dp&#10;$1$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
