@@ -6,48 +6,48 @@ Windows
 
 Template python Odoo
 ```
-cp .\templates\Python.xml C:\Users\[user]\.PyCharm2016.2\config\templates\Python.xml
+COPY .\templates\Python.xml <your home directory>\<product name><version number>\config\templates\Python.xml
 ```
 Template xml Odoo
 ```
-cp .\templates\html_xml.xml C:\Users\[user]\.PyCharm2016.2\config\templates\html_xml.xml
+COPY .\templates\html_xml.xml <your home directory>\<product name><version number>\config\templates\html_xml.xml
 ```
 
 Linux
 
 Template python Odoo
 ```
-cp ./templates/Python.xml /home/[user]/.PyCharm30/config/templates/Python.xml
+cp ./templates/Python.xml <your home directory>/.<product name><version number>/config/templates/Python.xml
 ```
 Template xml Odoo
 ```
-cp ./templates/html_xml.xml /home/[user]/.PyCharm30/config/templates/html_xml.xml
+cp ./templates/html_xml.xml <your home directory>/.<product name><version number>/config/templates/html_xml.xml
 ```
 MaxOS
 
 Template python Odoo
 ```
-cp ./templates/Python.xml /Users/[user]/Library/Preferences/PyCharm30/templates/Python.xml
+cp ./templates/Python.xml <your home directory>/Library/Preferences/<product name><version number>/templates/Python.xml
 ```
 Template xml Odoo
 ```
-cp ./templates/html_xml.xml /Users/[user]/Library/Preferences/PyCharm30/templates/html_xml.xml
+cp ./templates/html_xml.xml <your home directory>/Library/Preferences/<product name><version number>/templates/html_xml.xml
 ```
 
 # Install files templates
 
 Windows
 ```
-cp .\fileTemplates\*.py  C:\Users\[user]\.PyCharm2016.2\config\fileTemplates\*.py
+COPY .\fileTemplates\*.py  <your home directory>\<product name><version number>\config\fileTemplates\
 ```
 
 Linux
 ```
-cp ./fileTemplates/*.py /home/[user]/.PyCharm30/config/fileTemplates/*.py
+cp ./fileTemplates/*.py <your home directory>/.<product name><version number>/config/fileTemplates/
 ```
 MacOS
 ```
-cp -r ./fileTemplates/ /Users/[user]/Library/Preferences/PyCharm30/fileTemplates/
+cp -r ./fileTemplates/ <your home directory>/Library/Preferences/<product name><version number>/fileTemplates/
 ```
 
 Restart Pycharm
