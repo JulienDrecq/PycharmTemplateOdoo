@@ -23,7 +23,7 @@ Template xml Odoo
 ```
 cp ./templates/html_xml.xml <your home directory>/.<product name><version number>/config/templates/html_xml.xml
 ```
-MaxOS
+MacOS
 
 Template python Odoo
 ```
