@@ -522,4 +522,13 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="notebook inside last" value="&lt;xpath expr=&quot;//notebook[last()]&quot; position=&quot;inside&quot;&gt;&#10;    &lt;page name=&quot;$1$&quot; string=&quot;$2$&quot;$3$&gt;&#10;        $4$&#10;    &lt;/page&gt;&#10;&lt;/xpath&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
